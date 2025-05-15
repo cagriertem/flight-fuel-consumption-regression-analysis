@@ -55,8 +55,3 @@ Four regression models were trained to predict fuel consumption:
 - XGBoost, CatBoost
 - RandomForestRegressor
 - Support Vector Regression (SVR)
-
----
-
-📌 For questions or contributions, feel free to open an issue or submit a pull request.
-
