@@ -7,6 +7,7 @@ This project analyzes flight data from January 2025 to identify patterns in fuel
 - Time Period: January 2025
 - Features: Departure & arrival airports, fuel levels, times, durations, and encoded route IDs
 
+---
 
 ## 1. Preprocessing
 
@@ -50,6 +51,8 @@ Added several derived columns for analysis:
 - High-speed flights with elevated fuel per km indicate anomalies.  
 - Specific dates/durations (e.g., 2025-01-17) reveal operational inefficiencies.  
 
+---
+
 ## 4. Predictive Modeling
 
 Four regression models were trained to predict fuel consumption:
@@ -79,7 +82,9 @@ Four regression models were trained to predict fuel consumption:
 - **Use optimum fuel levels** to reduce costs and unnecessary fuel burn.  
 - **Check high-traffic days** (first 5 days of the month, Saturdays) to assess passenger impact.  
 - **Use a larger dataset** for more reliable insights across destinations, weather, and passenger volumes.
-- 
+
+---
+
 ## 🛠 Tools & Libraries Used
 
 - pandas, NumPy
