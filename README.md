@@ -50,16 +50,16 @@ Added several derived columns for analysis:
 - High-speed flights with elevated fuel per km indicate anomalies.  
 - Specific dates/durations (e.g., 2025-01-17) reveal operational inefficiencies.  
 
-## 4.  Predictive Modeling
+## 4. Predictive Modeling
 
 Four regression models were trained to predict fuel consumption:
 
-| Model           | MAE     | RMSE    | R² Score | MAPE   |
-|----------------|---------|---------|----------|--------|
-| XGBoost        | 161.70  | 468.04  | 0.96     | 1.65%  |
-| CatBoost       | 387.30  | 706.25  | 0.91     | 6.03%  |
-| Random Forest  | 526.55  | 1221.97 | 0.74     | 8.41%  |
-| SVM (optimized)| 425.95  | 873.87  | 0.87     | 4.77%  |
+| Model         | MAE        | MSE           | RMSE       | R² Score | MAPE    |
+|---------------|-----------|---------------|------------|----------|---------|
+| XGBoost       | 334.41    | 396,057       | 629.33     | 0.897    | 3.59%   |
+| Random Forest | 683.18    | 1,675,634     | 1,294.46   | 0.565    | 7.92%   |
+| CatBoost      | 469.96    | 547,025       | 739.61     | 0.858    | 5.17%   |
+| SVM           | 589.43    | 992,816       | 996.40     | 0.742    | 6.77%   |
 
 🏆 XGBoost was the best-performing model across all evaluation metrics.
 
